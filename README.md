@@ -135,3 +135,66 @@ The goal is to understand user behavior and how external factors affect trips to
 - Enables better operational planning under weather conditions  
 - Supports demand forecasting and resource allocation  
 - Can inform dynamic pricing strategies  
+
+## ⚙️ How to Run This Project
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/uber-taxi-analysis.git
+cd uber-taxi-analysis
+```
+
+### 2. Install dependencies
+
+Make sure you have Python installed, then run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the weather data scraper
+
+```bash
+python src/weather_scraper.py
+```
+
+This will extract weather data and save it locally in the `data/` folder.
+
+### 4. Open the analysis notebook
+
+```bash
+jupyter notebook notebooks/taxi_analysis.ipynb
+```
+
+Run all cells to reproduce the analysis, visualizations, and hypothesis testing.
+
+---
+
+## 📊 Data Sources
+
+* Taxi trip datasets (provided as part of the project)
+* Weather data scraped from:
+  https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html
+
+---
+
+## 🧪 Hypothesis Tested
+
+**"The average duration of trips from Loop to O'Hare changes during rainy Saturdays."**
+
+* Statistical test used: Independent t-test
+* Significance level (alpha): 0.05
+* Result: A statistically significant difference was found (p < 0.05)
+
+---
+
+## 📦 Requirements
+
+All dependencies are listed in:
+
+```
+requirements.txt
+```
