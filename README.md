@@ -138,36 +138,21 @@ The goal is to understand user behavior and how external factors affect trips to
 
 ## ⚙️ How to Run This Project
 
-Follow these steps to run the project locally:
+Follow these steps to run the project:
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/uber-taxi-analysis.git
-cd uber-taxi-analysis
-```
 
 ### 2. Install dependencies
 
-Make sure you have Python installed, then run:
-
-```bash
-pip install -r requirements.txt
-```
 
 ### 3. Run the weather data scraper
 
-```bash
-python src/weather_scraper.py
-```
 
 This will extract weather data and save it locally in the `data/` folder.
 
 ### 4. Open the analysis notebook
 
-```bash
-jupyter notebook notebooks/taxi_analysis.ipynb
-```
 
 Run all cells to reproduce the analysis, visualizations, and hypothesis testing.
 
